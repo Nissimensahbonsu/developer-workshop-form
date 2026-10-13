@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <title>Developer Workshop Registration</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Developer Workshop Registration</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label id="name" for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+        
+               <label id="emails" for="email">Email</label>
+               <input type="email" name="email" id="email" required><br>
+           
+               <label for="experience">Experience Level</label>
+               <select name="experience" id="experience" required>
+                <option>Select your Experience Level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+             </select>
+           </div>
+
+
+           <div class="form-group">
+             <p>Workshop Track</p>
+            <div class="radio-group">
+             <input type="radio" name="track" id="frontend" value="frontend" required >
+             <label for="track">Frontend Wed</label> <br><br>
+
+                
+             <input type="radio" name="track" id="backend" value="backend" required>
+             <label for="track">Backend APIs</label><br><br>
+
+             <input type="radio" name="track" id="uiux" value="uiux" required>
+             <label for="track">UI/UX Desgin</label><br><br>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label>Notifications</label>
+                <input type="checkbox" name="notifcations" id="yes" value="yes" required>
+                <label for="notifications">I agree to recieve event updates</label><br>
+            </div>
+            <button id="button" type="submit">Register Now</button>
+
+        </form>
+    </div>
+</body>
+</html>
